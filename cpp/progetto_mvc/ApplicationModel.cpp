@@ -2,15 +2,17 @@
 #include "ApplicationModel.h"
 
 ApplicationModel::ApplicationModel():
-mValue(0),Model()
+    Model()
 {}
 
-int ApplicationModel::posti_liberi(){
+int ApplicationModel::info(){
 
 }
 int ApplicationModel::ingresso(){
+    posti_liberi--;
 
 }
 int ApplicationModel::uscita(){
+    posti_liberi++;
 	
 }

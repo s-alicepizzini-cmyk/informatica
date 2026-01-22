@@ -12,6 +12,7 @@ public:
 	ApplicationView(ApplicationModel *m);
 
 	void draw(); 
+    int getScelta();
 
 
 	///virtual void initialize();

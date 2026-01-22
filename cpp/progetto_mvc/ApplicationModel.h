@@ -11,7 +11,7 @@ class ApplicationModel : public MVC::Model {
 
 	public:
 		ApplicationModel();
-		int posti_liberi();
+		int info();
 		int ingresso();
 		int uscita();
 
@@ -19,4 +19,3 @@ class ApplicationModel : public MVC::Model {
 };
 
 #endif
-

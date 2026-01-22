@@ -15,9 +15,9 @@ ApplicationController::ApplicationController(ApplicationView *v):
 
     void ApplicationController::logic(){
 
-            int scelta=5;
+            int scelta;
 
-            cin >> scelta;
+            scelta=((ApplicationView*)view)->getScelta();
 
             switch(scelta){
 			case 0: 
@@ -25,16 +25,16 @@ ApplicationController::ApplicationController(ApplicationView *v):
 				break;
 
 			case 1: 
-				((ApplicationModel*)model)->loadValue(((ApplicationModel*)model)->getValue()+1); //info parcheggio
+				(((ApplicationModel*)model)->info()); //info parcheggio
 				cout << "ggrgegsrhs" << endl;
 				break;
 
 			case 2: 
-				((ApplicationModel*)model)->loadValue(((ApplicationModel*)model)->getValue()-1); //ingresso
+				(((ApplicationModel*)model)->ingresso()); //ingresso
 				break;
 			
 			case 3: 
-				((ApplicationModel*)model)->loadValue(((ApplicationModel*)model)->getValue()-1); //uscita
+				(((ApplicationModel*)model)->uscita()); //uscita
 				break;	
 
 

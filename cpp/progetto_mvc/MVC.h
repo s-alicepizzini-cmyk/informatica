@@ -3,14 +3,14 @@
 #define MVC_H_
 #include <iostream>
 
-namespace MVC{ //per evitare problemi di visibilit‡ nella redifinizione di oggetti/variabili uso il namespace
+namespace MVC{ //per evitare problemi di visibilit√† nella redifinizione di oggetti/variabili uso il namespace
 
 /////////////////////////////////////////////////////////////////////////
 //Observer
 /////////////////////////////////////////////////////////////////////////
 class Observer{ // usata per aggiungere al model sia il view che il controller (le quali erediteranno da questa classe)
 public:
-	virtual void update()=0;//funzione virtuale PURA -> questa Ë classe astratta -> non posso istanziarla
+	virtual void update()=0;//funzione virtuale PURA -> questa √® classe astratta -> non posso istanziarla
 };
 /////////////////////////////////////////////////////////////////////////
 //Model
@@ -64,7 +64,7 @@ public:
 		this->draw();
 	}
 
-	virtual void draw(void){} // la parte grafica, si far‡ overriding nella classe derivata!
+	virtual void draw(void){} // la parte grafica, si far√† overriding nella classe derivata!
 
 	Model * getModel() { return model; }
 	Controller* getController() { return controller; }
@@ -93,7 +93,7 @@ public:
 	}
 
 	//virtual ~Controller() { myModel->detach(this); }
-	//virtual void update(void){} //sar‡ effettuato l'overriding nelle classi derivate
+	//virtual void update(void){} //sar√† effettuato l'overriding nelle classi derivate
 
 	virtual void logic(void){}
 	virtual void handleEvent(Event * e); //implementata nelle classi derivate
@@ -108,7 +108,7 @@ public:
             logic();
 
         }while(true);
-        //NON SAR‡ mai eseguita la fine dell'istr.
+        //NON SAR√† mai eseguita la fine dell'istr.
     }
 
 protected:

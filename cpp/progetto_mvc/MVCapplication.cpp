@@ -20,5 +20,5 @@ int main(void)
 
     c->loop();//MAIN LOOP DELL'APP
 
-    return 0;//non sar‡ mai eseguito
+    return 0;//non sar√† mai eseguito
 }
