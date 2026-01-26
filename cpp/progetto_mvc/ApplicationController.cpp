@@ -26,7 +26,6 @@ ApplicationController::ApplicationController(ApplicationView *v):
 
 			case 1: 
 				(((ApplicationModel*)model)->info()); //info parcheggio
-				cout << "ggrgegsrhs" << endl;
 				break;
 
 			case 2: 
@@ -43,12 +42,6 @@ ApplicationController::ApplicationController(ApplicationView *v):
 
 
     }
-	//una sorta di LOOP:loadValue() di model-> notify()->update() di view
-	//												   ->update() di control(questo metodo) ->loadValue() di model -> notify()...
-	/*void ApplicationController::update(){
-		isUptoDate=true;
-	}*/
-
-	//funzione alla quale in futuro potrebbe essere associata la tastiera
+	
 	void MVC::Controller::handleEvent(MVC::Event * e) {;//fai qualcosa
 	}

@@ -8,10 +8,14 @@ class ApplicationModel : public MVC::Model {
 
 	private:
 		int posti_liberi;
+		int max_posti=50;
+		double tariffaOraria=1.5;
 
 	public:
 		ApplicationModel();
-		int info();
+		int getPostiLiberi();
+		double getTariffaOraria();
+		void info();
 		int ingresso();
 		int uscita();
 
