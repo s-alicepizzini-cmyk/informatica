@@ -2,8 +2,13 @@
 #include <iostream>
 #include <cstdlib>
 
+
+
 ApplicationView::ApplicationView(ApplicationModel *m)
     : View(m) {}
+
+
+
 
 void ApplicationView::draw() {
     system("cls");
@@ -18,7 +23,7 @@ void ApplicationView::draw() {
 
 int ApplicationView::getScelta() {
     int scelta;
-    std::cout << " | INSERIRE il comando scelto: ";
+    std::cout << " | Scegli il comando da usare: ";
     std::cin >> scelta;
     return scelta;
 }

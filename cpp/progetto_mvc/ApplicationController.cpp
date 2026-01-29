@@ -30,6 +30,7 @@ ApplicationController::ApplicationController(ApplicationView *v):
 
 			case 2: 
 				(((ApplicationModel*)model)->ingresso()); //ingresso
+				 
 				break;
 			
 			case 3: 
